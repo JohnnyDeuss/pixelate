@@ -6,11 +6,11 @@ import numpy as np
 
 
 def pixelate(img, num_colors=64, pixel_size=8):
-    """Pixelate an image and reduce use a limited palette of colours.
+    """Pixelate an image and use a limited palette of colours.
 
     Parameters:
     - img The image to pixelate as a numpy array.
-    - num_colors The number of colors used in the pixelated image.
+    - num_colors The number of colors to be used in the pixelated image.
     - pixel_size The number of pixels to combine into a new pixel.
     """
     # Convert each pixel value to the average color value of the block it's in.
